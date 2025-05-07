@@ -1,54 +1,49 @@
-# React + TypeScript + Vite
+# React Demo Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a React application showcasing various features including:
+- Virtualized List
+- Pagination
+- Shopping Cart
+- Form Validation
+- CRUD Operations
+- Dark Mode
 
-Currently, two official plugins are available:
+## Development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+To run the application locally:
 
-## Expanding the ESLint configuration
+```bash
+# Install dependencies
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+# Start development server
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Deployment
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+This application is automatically deployed to GitHub Pages using GitHub Actions. The deployment process:
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Triggers on push to the main branch
+2. Builds the application
+3. Deploys to the gh-pages branch
+
+The live application is available at: https://PhurinatBunyachai.github.io/cliniter-test/
+
+## Features
+
+- **Virtualized List**: Efficient rendering of large lists using react-window
+- **Pagination**: Custom pagination hook with configurable options
+- **Shopping Cart**: shopping cart with persistence
+- **Form Validation**: Form handling with react-hook-form
+- **CRUD Operations**: Redux-powered Product management with persistence
+- **Dark Mode**: Theme switching with Redux persistence
+
+## Technologies Used
+
+- React
+- TypeScript
+- Redux Toolkit
+- React Router
+- Tailwind CSS
+- Vite
