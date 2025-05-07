@@ -28,6 +28,7 @@ export function usePagination({
       start: Math.max(2, currentPage - siblingCount), // Start from 2 since 1 is always shown
       end: Math.min(totalPages - 1, currentPage + siblingCount), // End at totalPages-1 since last page is always shown
     }
+    console.log(range)
     return range
   }, [currentPage, totalPages, siblingCount])
 

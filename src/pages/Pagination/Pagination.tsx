@@ -17,8 +17,7 @@ export default function Pagination() {
     hasPrevPage,
   } = usePagination({
     totalItems: users.length,
-    pageSize: 10,
-    siblingCount: 1,
+    pageSize: 10
   })
 
   const currentUsers = getPageItems(users)
@@ -119,7 +118,7 @@ export default function Pagination() {
             columns={columns}
             filename="users.csv"
           >
-            <span className='px-5 py-2 rounded-md cursor-pointer bg-indigo-600 text-white'>Download</span>
+            <span className='px-5 py-2 rounded-md cursor-pointer bg-indigo-600 text-white'>Download CSV</span>
           </CsvDownloader>
         </div>
         <div className="overflow-x-auto">
