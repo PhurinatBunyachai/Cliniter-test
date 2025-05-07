@@ -30,7 +30,7 @@ This application is automatically deployed to GitHub Pages using GitHub Actions.
 
 The live application is available at: https://PhurinatBunyachai.github.io/cliniter-test/
 
-## Features
+## Exam
 
 - **Virtualized List**: Efficient rendering of large lists using react-window
 - **Pagination**: Custom pagination hook with configurable options
