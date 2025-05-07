@@ -55,7 +55,7 @@ function App() {
                   to="/crud"
                   className={`nav ${pathname == '/crud' ? 'active' : ''}`}
                 >
-                  CRUD And Redux
+                  CRUD And Redux Persist
                 </Link>
                 <Link
                   to="/dark-mode"
